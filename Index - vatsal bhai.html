@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Conversation For Deep Learning Frameworks</title>
+</head>
+<body>
+<h1 style="text-align:center"> Please enter suitable deep learning framework</h1>
+<h2 style="text-align:center">Please enter a pytorch model for onnx (.pt) extension file</h2>
+<p> <font size="2">Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. ONNX is widely supported and can be found in many frameworks, tools, and hardware. Enabling interoperability between different frameworks and streamlining the path from research to production helps increase the speed of innovation in the AI community.</font> </p>
+<form action="/ptconversion/" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" style="margin-left: 40%">
+    <button name="PytorchModelConversation" type="submit" style="margin-left: 75%"> pytorchconversion to onnx</button>
+</form>
+<h2 style="text-align:center">Please enter a onnx model  generated from pytorch Model for conversion to tensorflow and tensorflow lite (.onnx) extension file</h2>
+<p><font size="2"> TensorFlow is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks. TensorFlow Lite is an open source deep learning framework for on-device inference.</font></p>
+<form action="/tpconversion/" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" style="margin-left: 40%" >
+    <button name="PytorchModelConversation" type="submit" style="margin-left: 75%">pytorchconversion to tensorflow and tflite</button>
+</form>
+<h2 style="text-align:center">Please enter a keras model for onnx conversion (.pb) or (.h5) extension file</h2>
+<p><font size="2">The keras2onnx model converter enables users to convert Keras models into the ONNX model format. Initially, the Keras converter was developed in the project onnxmltools. keras2onnx converter development was moved into an independent repository to support more kinds of Keras models and reduce the complexity of mixing multiple converters.</font></p>
+<form action="/kconversion/" method="post" enctype="multipart/form-data">
+     <input type="file" name="file" style="margin-left: 40%">
+    <button name="KerasModelConversationtoonnx" type="submit" style="margin-left: 75%"> kerasconversion to onnx</button>
+</form>
+<h2 style="text-align:center">Please enter a keras model for tensorflow lite conversion (.pb) or (.h5) extension file</h2>
+<p><font size="2">The TensorFlow Lite converter takes a TensorFlow model and generates a TensorFlow Lite model (an optimized FlatBuffer format identified by the .tflite file extension).</font></p>
+<form action="/tfconversion/" method="post" enctype="multipart/form-data">
+     <input type="file" name="file" style="margin-left: 40%">
+    <button name="KerasModelConversationtoTflite" type="submit" style="margin-left: 75%">kerasconversion to tensorflowflite</button>
+</form>
+</body>
+</html>
